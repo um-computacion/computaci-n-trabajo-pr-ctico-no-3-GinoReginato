@@ -27,9 +27,10 @@ class TestCalculoNumeros(unittest.TestCase):
         'builtins.input',
         return_value='AAA'
     )
+
     def test_ingreso_letras(self, patch_input):
         with self.assertRaises(ValueError):
             ingrese_numero()
 
 if __name__ == '__main__':
-    unittest.main() 
+    unittest.main()  
